@@ -86,28 +86,44 @@
             The first section of the website
 
             <br/><br/>
+
+
+            <center>    
+                <video controls width="60%" class="left float-start">
+                    <source src="/images/EAGLE.mp4" type="video/mp4"/>
+                </video>
+            </center>
             
+            The video on the left shows the evolution of structure in a 25 Mpc version of the EAGLE simulation. Color indicates temperature and intensity indicates gas density. 
+            <br/><br/>
+
+            <!-- <h2>Friedmann-Lemaître-Robertson-Walker metric</h2>
+            <br/>
+            &lt; Write here a bit about Friedmann-Lemaître-Robertson-Walker metric &gt;
+            <br/><br/> -->
+            
+
             <h2>Accretion Radius and Accretion Rate</h2>
             <br/>
 
             <center>
                 <div class="container" style="width: 90%;">
                     <figure class="float-start">
-                        <img src="/images/bondi_diagram.png" alt="BHL accretion diagram" width="40%"/>
+                        <img src="/projects/P463_reading_project_BHL_accretion/images/bondi_diagram.png" alt="BHL accretion diagram" width="90%"/>
                         <figcaption class="caption">Figure 1: Schematic Diagram of Bondi-Hoyle-Lyttleton Accretion Model]</figcaption>
                     </figure>
                 </div>
             </center>
 
-            Let's look at the problem from rest frame of the point mass (in this case, star; S). A uniform cloud of intergalactic gas is streaming past S from right to left in the diagram. The initial velocity and density of the gas (unaffected by star's gravitational field) are &v_\inf$ and $\rho_\inf$, respectively. The impact parameter, denoted by $\sigma$ is called the Bondi radius, i.e. the radius of the column of the gas which is eventually accreted by the star. We try to derive an expression for the impact parameter from equation of motion of the gas particle from A (or B) to C.
+            Let's look at the problem from rest frame of the point mass (in this case, star; S). A uniform cloud of intergalactic gas is streaming past S from right to left in the diagram. The initial velocity and density of the gas (unaffected by star's gravitational field) are \(v_\infty\) and \(\rho_\infty\), respectively. The impact parameter, denoted by \(\sigma\) is called the Bondi radius, i.e. the radius of the column of the gas which is eventually accreted by the star. We try to derive an expression for the impact parameter from equation of motion of the gas particle from A (or B) to C.
 
             <br/>
 
             We recognise that the equation of motion is an equation of conic section,
 
-            $$ l\over r = 1 + e cos\theta $$
+            $$ \frac{l}{r} = 1 + e cos\theta $$
 
-            At initial asymptote ($l << r$), the equation of direction parallel to asymtote is given by,
+            At initial asymptote (\(l << r\)), the equation of direction parallel to asymtote is given by,
 
             $$ 1 + e cos\theta = 0 $$
 
@@ -115,36 +131,33 @@
 
             $$ e cos\theta = 1 $$
 
-            Substituting $e cos\theta$ in (1) gives us an expression for SC,
+            Substituting \e cos\theta\ in (1) gives us an expression for SC,
 
-            $$ l \over SC = 1 + 1 \\
-            \Rightarrow SC = l \over 2 $$
+            $$ \frac{l}{SC} = 1 + 1 \\
+            \Rightarrow SC = \frac{l}{2} $$
 
             Now, we differentiate (1) with respec to time,
 
-            $$ - (l \over r^2) \dot dr \over dt = - e sin \theta d\theta \over dt \\
-            dr \over dt = (e sin\theta \over l) \dot r^2 (d\theta \over dt) \\
-            dr \over dt = eh sin\theta \over l [h = r^2 d\theta \over dt = constant] $$
+            $$ - \frac{l}{r^2} \frac{dr}{dt} = - e sin \theta \frac{d\theta}{dt} \\
+            \Rightarrow \frac{dr}{dt} = \frac{esin\theta}{l} \dot r^2 \frac{d\theta}{dt} \\
+            \Rightarrow \frac{dr}{dt} = \frac{ehsin\theta}{l} [h = r^2 \frac{d\theta}{dt} = constant] $$
 
             Now,
 
-            $$ h = \sqrt{GMl} = v_\infin \sigma $$
+            $$ h = \sqrt{GMl} = v_\infty \sigma $$
 
-            $$ \Rightarrow l = v^2_\infin \sigma ^2 \over GM $$
+            $$ \Rightarrow l = \frac{v^2_\infty \sigma ^2}{GM} $$
 
-            $\therefore$ At C, the velocity of gas = v_\infin
+            \(\therefore \) At C, the velocity of gas = \(v_\infty\)
 
             The gas particle will fail to escape if,
 
-            $$ v^2_\infin < 2GM \over SC = 4GM \over l = 4G^2M^2 \over v^2_\infin \sigma^2 $$
-            $$ \therefore \sigma < 2GM \over v^2_\infin $$
+            $$ v^2_\infty < \frac{2GM}{SC} = \frac{4GM}{l} = \frac{4G^2M^2}{v^2_\infty \sigma^2} $$
+            $$ \therefore \sigma < \frac{2GM}{v^2_\infty} $$
 
             We finally get the mass accretion rate,
 
-            $$ \dot{M} = \pi \sigma^2 v_\infin \rho_\infin = 4 \pi G^2 M^2 \rho_\infin \over v^3_\infin $$
-
-            $$ \frac{l}{r} = 2 $$
-
+            $$ \dot{M}_{HL} = \pi \sigma^2 v_\infty \rho_\infty = \frac{4 \pi G^2 M^2 \rho_\infty}{v^3_\infty} $$
 
 
 
